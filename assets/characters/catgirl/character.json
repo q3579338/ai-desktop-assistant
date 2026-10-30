@@ -1,0 +1,81 @@
+{
+  "id": "catgirl",
+  "name": "橘宁",
+  "image": "atlas.png",
+  "columns": 3,
+  "rows": 2,
+  "states": {
+    "idle": 0,
+    "thinking": 1,
+    "working": 2,
+    "waiting": 3,
+    "completed": 4,
+    "error": 5
+  },
+  "source": "Original imagegen illustration; locally authored 2D deformation, blinking and premultiplied-alpha animation; not 3D or Live2D",
+  "atlas_sha256": "ee54532f6a2c891859a51ea247bf2ef442fd5a1b47e368d04c0b11aa2140c912",
+  "generation_prompt": "Original beautiful adult cat-eared woman in her mid-twenties; copper-orange hair, amber eyes, cream blouse and teal cardigan; six consistent waist-up work poses in a 3x2 atlas; transparent alpha, clean margins, no text.",
+  "clips": {
+    "idle": {
+      "file": "clips/idle.webp",
+      "loop": true,
+      "frames": 96
+    },
+    "thinking": {
+      "file": "clips/thinking.webp",
+      "loop": true,
+      "frames": 72
+    },
+    "working": {
+      "file": "clips/working.webp",
+      "loop": true,
+      "frames": 84
+    },
+    "waiting": {
+      "file": "clips/waiting.webp",
+      "loop": true,
+      "frames": 48
+    },
+    "completed": {
+      "file": "clips/completed.webp",
+      "loop": false,
+      "frames": 42
+    },
+    "error": {
+      "file": "clips/error.webp",
+      "loop": true,
+      "frames": 48
+    },
+    "head_pat": {
+      "file": "clips/head_pat.webp",
+      "loop": false,
+      "frames": 36
+    },
+    "poke": {
+      "file": "clips/poke.webp",
+      "loop": false,
+      "frames": 24
+    },
+    "drag_start": {
+      "file": "clips/drag_start.webp",
+      "loop": true,
+      "frames": 24
+    },
+    "drag_end": {
+      "file": "clips/drag_end.webp",
+      "loop": false,
+      "frames": 18
+    }
+  },
+  "motion": {
+    "kind": "2d_original_illustration_local_deformation",
+    "canvas": [
+      480,
+      480
+    ],
+    "fps": 24,
+    "totalFrames": 492,
+    "sourceDirectory": "assets/catgirl-illustration-motion-source",
+    "originalAtlasPreserved": true
+  }
+}

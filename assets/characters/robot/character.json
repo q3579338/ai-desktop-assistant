@@ -1,0 +1,61 @@
+{
+  "id": "robot",
+  "name": "小序办公助手",
+  "image": "image.png",
+  "columns": 1,
+  "rows": 1,
+  "states": {
+    "idle": 0,
+    "thinking": 0,
+    "working": 0,
+    "waiting": 0,
+    "completed": 0,
+    "error": 0
+  },
+  "source": "Original Blender geometry, rigid skin rig and motion; rendered locally, MIT",
+  "generation_prompt": "Original office robot XiaoXu: pearl-white ceramic body, navy glass face, mint eyes, apricot joints and teal bow tie. Built from original geometry and rigged in Blender. The imagegen concept atlas is preserved separately as atlas.png and concept.json. Desktop playback uses pre-rendered transparent WebP clips, not real-time 3D.",
+  "clips": {
+    "idle": {
+      "file": "clips/idle.webp",
+      "loop": true
+    },
+    "thinking": {
+      "file": "clips/thinking.webp",
+      "loop": true
+    },
+    "working": {
+      "file": "clips/working.webp",
+      "loop": true
+    },
+    "waiting": {
+      "file": "clips/waiting.webp",
+      "loop": true
+    },
+    "completed": {
+      "file": "clips/completed.webp",
+      "loop": false
+    },
+    "error": {
+      "file": "clips/error.webp",
+      "loop": true
+    },
+    "head_pat": {
+      "file": "clips/head_pat.webp",
+      "loop": false
+    },
+    "drag_start": {
+      "file": "clips/drag_start.webp",
+      "loop": true
+    },
+    "drag_end": {
+      "file": "clips/drag_end.webp",
+      "loop": false
+    },
+    "poke": {
+      "file": "clips/poke.webp",
+      "loop": false
+    }
+  },
+  "model_sha256": "f25b7ebc451e2f737e0de5c74f3b9f974ed02dbcb0204720a58ef42efd41f098",
+  "image_sha256": "cf2948eab9d542e644dc93fedd05bf208d47eb43bf11b26e3bd6268da787a4a8"
+}

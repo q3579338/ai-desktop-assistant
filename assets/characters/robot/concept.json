@@ -1,0 +1,11 @@
+{
+  "id": "robot",
+  "name": "小序办公助手",
+  "image": "atlas.png",
+  "columns": 3,
+  "rows": 2,
+  "states": {"idle": 0, "thinking": 1, "working": 2, "waiting": 3, "completed": 4, "error": 5},
+  "source": "built-in imagegen, original office robot for AI desktop assistant",
+  "atlas_sha256": "4d3a43ee1f30320f507eba0ecc5223f9724c8c82f6578f1a37046b84ab7e1a6f",
+  "generation_prompt": "Original warm friendly small office robot named 小序, pearl-white rounded ceramic body, navy glass face with mint eyes, apricot joints and tiny teal necktie; six consistent full-body 3x2 poses: idle, thinking, laptop work, waiting, cheering, concerned. Transparent background, generous cell padding, no text. Stylized 3D-render illustrations, not a 3D model."
+}

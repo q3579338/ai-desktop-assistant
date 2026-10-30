@@ -1,0 +1,952 @@
+{
+  "schema": 1,
+  "kind": "reviewed-open-source-snapshot",
+  "files": [
+    {
+      "path": ".github/workflows/test.yml",
+      "bytes": 467,
+      "sha256": "24125476057eb5eecbe36e2326eb4cd85e51c685084415c6df4265f2c20f0108"
+    },
+    {
+      "path": "assets/characters/catgirl/atlas.png",
+      "bytes": 2614543,
+      "sha256": "ee54532f6a2c891859a51ea247bf2ef442fd5a1b47e368d04c0b11aa2140c912"
+    },
+    {
+      "path": "assets/characters/catgirl/character.json",
+      "bytes": 2047,
+      "sha256": "1f57e2203980e415fa9c65adf951374bedb54223ea86bd6720d062b8600455f2"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/completed.webp",
+      "bytes": 9868416,
+      "sha256": "333583e10d89cd12abd05865a74098fb3a6db0acba08d866f190b0479b8d35a5"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/drag_end.webp",
+      "bytes": 3869892,
+      "sha256": "76a7d8f9a1e560f49769e0e665224628f89b009363fae2f5080f7048219da05b"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/drag_start.webp",
+      "bytes": 5166972,
+      "sha256": "9fd21893b22ab2ddc2457ec022cfbcfc40ff9aded5da8030812cdf59c3bf8df0"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/error.webp",
+      "bytes": 9239010,
+      "sha256": "4b0de041978336947e333e9414e66f172fa8184d0aad0fe6dccef27ac7341e7e"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/head_pat.webp",
+      "bytes": 7642614,
+      "sha256": "5efa2c90c71cea867f7b847d907112ae50569b03ab6e851f6128ee18937ed912"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/idle.webp",
+      "bytes": 19992502,
+      "sha256": "f64efa4ae8ba672c748720dd905c2321df069b54467cbaed72cff1f6aae01469"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/poke.webp",
+      "bytes": 5160254,
+      "sha256": "dcf8033d84c7f17f82f1a25f59ff24cd58734dc186e2fc3da8b7bff93818de71"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/thinking.webp",
+      "bytes": 14223576,
+      "sha256": "abb26737d236158531ae843430f00cd76305a0c992395876a1a06d7dfaf66556"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/waiting.webp",
+      "bytes": 10786254,
+      "sha256": "13810d3bb99fbe69452f636aac70f84b83b0290a48f0c7f3883fc0235c8a959e"
+    },
+    {
+      "path": "assets/characters/catgirl/clips/working.webp",
+      "bytes": 15252310,
+      "sha256": "ec3af1588af7a7f00534e2d6dba2a672ff97fc0f791ee4c9191d4f41005e095b"
+    },
+    {
+      "path": "assets/characters/robot/atlas.png",
+      "bytes": 1975066,
+      "sha256": "4d3a43ee1f30320f507eba0ecc5223f9724c8c82f6578f1a37046b84ab7e1a6f"
+    },
+    {
+      "path": "assets/characters/robot/character.json",
+      "bytes": 1716,
+      "sha256": "bc967310ece40d2da948c330384acced834f8a637df5d5ba9df6c49c35c48e7d"
+    },
+    {
+      "path": "assets/characters/robot/clips/completed.webp",
+      "bytes": 520396,
+      "sha256": "c4da9ea544e6523caaa8d36622dd4afc31f7b77eff7e31c868b0387f7d531971"
+    },
+    {
+      "path": "assets/characters/robot/clips/drag_end.webp",
+      "bytes": 224742,
+      "sha256": "ec47a350af00ea9e7334f246c31146b938e91c5099ce442a473258e3eb4328ed"
+    },
+    {
+      "path": "assets/characters/robot/clips/drag_start.webp",
+      "bytes": 314466,
+      "sha256": "996da065a873ef698770c8955b01e66cd5707e53ef37385dc5fea600e75d3d15"
+    },
+    {
+      "path": "assets/characters/robot/clips/error.webp",
+      "bytes": 480466,
+      "sha256": "753ef02801c7e3f0a9da330e3faec228b80c3e9c09727f36bfad479434cd5027"
+    },
+    {
+      "path": "assets/characters/robot/clips/head_pat.webp",
+      "bytes": 399988,
+      "sha256": "74b1f8cbe061943673119f5abfd4ef08ad64dfc0ce4502c91a8b68f23ee1dea7"
+    },
+    {
+      "path": "assets/characters/robot/clips/idle.webp",
+      "bytes": 1079012,
+      "sha256": "ed5e1d81eadb390da1fb91a8949213170574a12c3e3b6aebd9e534ceee7f9d20"
+    },
+    {
+      "path": "assets/characters/robot/clips/poke.webp",
+      "bytes": 281470,
+      "sha256": "c4322495e31a07f76a99ed0f1ac98192073db8440ff7f10dbc6f125f12ab2fc1"
+    },
+    {
+      "path": "assets/characters/robot/clips/thinking.webp",
+      "bytes": 713558,
+      "sha256": "60b4a12664604ddf472e223340cf9340c9f318bfe62347ee37beeccf2021b6a8"
+    },
+    {
+      "path": "assets/characters/robot/clips/waiting.webp",
+      "bytes": 500756,
+      "sha256": "92b85c73593658c3336195dce670b1980a2fbfdf8797449cfdef09db146542fc"
+    },
+    {
+      "path": "assets/characters/robot/clips/working.webp",
+      "bytes": 726740,
+      "sha256": "cc1ce6cd7fa79d79c45f496f0fc66201fffee3b3f49ea999a5ec20f6a624a391"
+    },
+    {
+      "path": "assets/characters/robot/concept.json",
+      "bytes": 755,
+      "sha256": "94c8760a297c78706314e7b9eb9ab97f0cca391dc8a0b278eb4792b4bf15b37e"
+    },
+    {
+      "path": "assets/characters/robot/image.png",
+      "bytes": 170165,
+      "sha256": "3ef53c5f4e5f371cbaa15239faebb775b2298e6f4fed077381c68d62037b55bd"
+    },
+    {
+      "path": "assets/characters/tabby/atlas.png",
+      "bytes": 2222220,
+      "sha256": "94347e69187b141df652c8c7caaf11c7ce73ce3f97f4bf4787bf62540364df38"
+    },
+    {
+      "path": "assets/characters/tabby/character.json",
+      "bytes": 1648,
+      "sha256": "522ceb496daf9920fed2aee023e0562615e159c4e81060a7de2c72c869f9b921"
+    },
+    {
+      "path": "assets/characters/tabby/clips/completed.webp",
+      "bytes": 705512,
+      "sha256": "d833ae7bc8b929121c86fbcb07b95d1bf4d405c4f1d4de94172ee8539ebb5bde"
+    },
+    {
+      "path": "assets/characters/tabby/clips/drag_end.webp",
+      "bytes": 323316,
+      "sha256": "d295db8b0e7ae8f96a24169e302400fa1fdb2244f3a12498c10fcb75ae2c0ce3"
+    },
+    {
+      "path": "assets/characters/tabby/clips/drag_start.webp",
+      "bytes": 434178,
+      "sha256": "f1c43f2019116f3fd7b713424dbdc2550cde2df61d884a2e93ef0326256cf075"
+    },
+    {
+      "path": "assets/characters/tabby/clips/error.webp",
+      "bytes": 835666,
+      "sha256": "f733589af63f47666b793836e6abf26f606906229bca12c06e881fd9cff56244"
+    },
+    {
+      "path": "assets/characters/tabby/clips/head_pat.webp",
+      "bytes": 596982,
+      "sha256": "93c89acd541ce73a70750692dbeb51816d46ad1c7d63e16a9b08a59b8f216449"
+    },
+    {
+      "path": "assets/characters/tabby/clips/idle.webp",
+      "bytes": 1727414,
+      "sha256": "2227bd58f874588ff6cd7e9b4cc39f8bac73531f2ccf0d3a627698c10305f930"
+    },
+    {
+      "path": "assets/characters/tabby/clips/poke.webp",
+      "bytes": 432054,
+      "sha256": "04be635ef21ef18c2143e2ea0d6e6191edb429f4ed0e13a0502031ae15ec3ca8"
+    },
+    {
+      "path": "assets/characters/tabby/clips/thinking.webp",
+      "bytes": 1249714,
+      "sha256": "881b30c937f709ea7a2e6558e6044ed7c73dffb13ab9c122fdf8fc227a8daac1"
+    },
+    {
+      "path": "assets/characters/tabby/clips/waiting.webp",
+      "bytes": 855992,
+      "sha256": "5ef1b41f7ea01ca9798342ba130c3dcb63e5af5fe269bc740b45394d6809114a"
+    },
+    {
+      "path": "assets/characters/tabby/clips/working.webp",
+      "bytes": 1415982,
+      "sha256": "38ca2e3f2cc25d079d5cb7ecb5b5b89246780e02f765ebbe7f7d9767640e80fa"
+    },
+    {
+      "path": "assets/characters/tabby/concept.json",
+      "bytes": 623,
+      "sha256": "a9bd83836c266a19c4d259385554ab26155d5722b9852033df95dc25081d2090"
+    },
+    {
+      "path": "assets/characters/tabby/image.png",
+      "bytes": 201694,
+      "sha256": "fd8da9712942e5783af0bba4dd9c14211cc40e2d395afc8275baedf3634d85f9"
+    },
+    {
+      "path": "assets/licenses/GPL-2.0-only.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "assets/licenses/GPL-3.0-only.txt",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "assets/licenses/LGPL-3.0-only.txt",
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    {
+      "path": "assets/NotoSansSC.ttf",
+      "bytes": 17772300,
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+    },
+    {
+      "path": "assets/OFL-NotoSansSC.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "path": "assets/starpet.ico",
+      "bytes": 41264,
+      "sha256": "6e4ad013e56141a4c71683d84c1c2fd45225ed1490eb6451435fef30001424c4"
+    },
+    {
+      "path": "assets/starpet.png",
+      "bytes": 17212,
+      "sha256": "bdb40b1fd4e77080c77d2f0ace899b8995aa81b3d2d9c857bf815672eb43bb69"
+    },
+    {
+      "path": "docs/2d-generation.md",
+      "bytes": 2330,
+      "sha256": "2d556395521fd9661a41a4a5f14468f04382b24b613fd95e6754c915c57fd90c"
+    },
+    {
+      "path": "docs/context-menu.md",
+      "bytes": 365,
+      "sha256": "d520af0c1a9c4e211265d3c3b9e50cb728b1c74a4f24c9998e2634db8def53f5"
+    },
+    {
+      "path": "docs/desktop-world.md",
+      "bytes": 2423,
+      "sha256": "75abba8096557fdc159c958c52e4b4020405d7fabe6a1d35122893d2d3f8ad62"
+    },
+    {
+      "path": "docs/growth.md",
+      "bytes": 1619,
+      "sha256": "949e6152559af1ca6de07dd7b2d67dfc4e2eb5a473ffcaa7965899951e92a2b4"
+    },
+    {
+      "path": "docs/local-image-setup.md",
+      "bytes": 6172,
+      "sha256": "0a91fefd1bf1a73da7623cb806ab7d6f979718ecb9df12ddb78cdd830adcac65"
+    },
+    {
+      "path": "docs/local-qwen-setup.md",
+      "bytes": 5474,
+      "sha256": "8b9c01e158b1b49370c442728a3c4ad9e0d7516c6c7033544066ac3496ee74a3"
+    },
+    {
+      "path": "docs/model-selection.md",
+      "bytes": 1301,
+      "sha256": "6972fd49f13325b90e0fe9d853acae7cf24396551b975d85f0145d41d998c99d"
+    },
+    {
+      "path": "docs/open-source-release.md",
+      "bytes": 3144,
+      "sha256": "572b7aa8821ab786e6f88dcb51942a0bad78510fddd15ba43035d9a72d54cdb2"
+    },
+    {
+      "path": "docs/voice.md",
+      "bytes": 1260,
+      "sha256": "13bae9a5bc743ad2d76342eaac9803392d0a5788cfadc5e3d7f3b2f40fa21d25"
+    },
+    {
+      "path": "docs/workbuddy-chat-findings.md",
+      "bytes": 14482,
+      "sha256": "b4c16c2ec3d781aee47ca0d6134b5473a9e977639ea1b2e7a87d46d97ca3eb6e"
+    },
+    {
+      "path": "docs/workbuddy-cli-installed.md",
+      "bytes": 9663,
+      "sha256": "b272283953a3638f8057e1026b7f2e78665474e734f7f0f7c89fe1a023acb701"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1064,
+      "sha256": "e61e9a93a464a217994a5df931da2e0a40a9b4fe02eb9e9e8e745c32de7f530a"
+    },
+    {
+      "path": "main.py",
+      "bytes": 41386,
+      "sha256": "253cb7223ca9916566e98da8ec738b57f40ff3e09e1b726cc46cc3f1a709c4d4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4357,
+      "sha256": "4aab2a40bca131332e702532090704b08d37711d4fb65c1b8171a04ef1a4c467"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 48,
+      "sha256": "5b4e1018e12e053a3507be7d4c0f44f79a50e7af725ab4c22a040fdaab214f55"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 66,
+      "sha256": "4d50aad542bf1a6848b1ee3fd2c48236820bda91fe079f4a19323f63b643d6e7"
+    },
+    {
+      "path": "scripts/build.py",
+      "bytes": 5723,
+      "sha256": "2d401a1a264d78714bc51630ef6ce03245984713fcb209e10bbc7a69fb2acb3f"
+    },
+    {
+      "path": "scripts/create_icon.py",
+      "bytes": 873,
+      "sha256": "3abcdcd4e0a1883dcf2a0c281e884a0519aba811ae94868a1903343cf394ebb6"
+    },
+    {
+      "path": "scripts/export_open_source.py",
+      "bytes": 9500,
+      "sha256": "c161798a7bbd77437eb3f49b569f805b1015b77571981b61ed72b6bb45a74697"
+    },
+    {
+      "path": "scripts/test_release.py",
+      "bytes": 2633,
+      "sha256": "419abfae5c52c8a171484a9e91391e8ee2cdf3b6b53589f28d03cf1a6c53f0bd"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/agents/openai.yaml",
+      "bytes": 350,
+      "sha256": "fb0510e5aaf5afdcbc670e785978a574800635cda23daa4a422eb2450cfc561c"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/LICENSE.txt",
+      "bytes": 1064,
+      "sha256": "e61e9a93a464a217994a5df931da2e0a40a9b4fe02eb9e9e8e745c32de7f530a"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/architecture.md",
+      "bytes": 8630,
+      "sha256": "2b483c205e4bfefabc7fe4822164f6bd8ab579b568c56195eeeb1ad562e2150e"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/character-pipeline.md",
+      "bytes": 13297,
+      "sha256": "270aeb9b8374e5bb799ff53e36ffc11134e6e358102bcceb963f913828660b48"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/image-workshop.md",
+      "bytes": 4711,
+      "sha256": "5339897356f6fdbf2576d613ee28381ada5bbfc23ee2d2b25a3a0dad5e3c7393"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/local-animation.md",
+      "bytes": 5207,
+      "sha256": "06481f9b679a14a9b04fdb49418e98593a2366777303f59ee833f46d4485b32e"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/local-chat.md",
+      "bytes": 7283,
+      "sha256": "8909afc58f816c6f8a84c79d73c216f6ed2d1a8bac74235a670f9f47211696a2"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/local-image.md",
+      "bytes": 6172,
+      "sha256": "0a91fefd1bf1a73da7623cb806ab7d6f979718ecb9df12ddb78cdd830adcac65"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/memory.md",
+      "bytes": 3451,
+      "sha256": "270afba08d59192f0dfde5e0753506617f0dc498101de5d8d77d6bf50a6c27b3"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/paired-roles.md",
+      "bytes": 2325,
+      "sha256": "24e2db66102197cd7f1a055febded32a42fd218595154fb88692c1518922ac42"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/quickstart.md",
+      "bytes": 13619,
+      "sha256": "13c711dc6590c31bf622b3f67091a46a083d02eec3e61c55521f7e8bcd051e28"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/settings.md",
+      "bytes": 3257,
+      "sha256": "2de3f08ed1b5785fff3b1a276f6dcf700f6e7b32af57317a28984492682aef0a"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/references/verification-delivery.md",
+      "bytes": 12106,
+      "sha256": "d745abaac7dfbd16288c71f57f84cc8cfd353fb8de2e69bbd25a415a4f1f04aa"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/scripts/build_pairpack.py",
+      "bytes": 3664,
+      "sha256": "be428f18abc14f6b88d1e035ba56a2f2b038b8db8675e581d83864200b8fdbe7"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/scripts/build_rolepack.py",
+      "bytes": 10900,
+      "sha256": "fdda6acf391246087c3fb9249a2dd9fa29066ffae1a16719807256ce987221fb"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/scripts/create_assistant.py",
+      "bytes": 21706,
+      "sha256": "1bc3b308b14e544f286852eb064ea9707a0c7c048319012b0f36679f14279f46"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/scripts/generate_local_image.py",
+      "bytes": 21659,
+      "sha256": "3d3bd52fdcac112e45542206e34812ae40dfc7940500584b346daa1646ec5bd6"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/scripts/probe_local_runtime.py",
+      "bytes": 10573,
+      "sha256": "23b968429e8c43b81459803a02e01b6a96f07f282b88ba74da3b5e1c2aafc635"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/scripts/remove_local_background.py",
+      "bytes": 14031,
+      "sha256": "14c3865669948a7e8e70cb6e71273b413c61b279f71f0bd5cc8f3fe6ff7aaac2"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/scripts/run_local_chat.py",
+      "bytes": 14253,
+      "sha256": "e4281d108fcf0a28619cbd7095bb5afc56d1e61de88d58bb47edf338abf7fef5"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/SKILL.md",
+      "bytes": 8755,
+      "sha256": "53d948f594c8b76c8c3c5ea8a2b3c112809c690378b6a85c72b9d13f07d1ed4a"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/tests/test_build_rolepack.py",
+      "bytes": 10645,
+      "sha256": "581411f4e110b076872941479069e3909190118afbacf0f46b9059c92f91352d"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/tests/test_common_format_cli.py",
+      "bytes": 5441,
+      "sha256": "953248df0b49e3bae3b657404e058b7dbb4332ea13e71b98ee6aa576141b924b"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/tests/test_create_assistant.py",
+      "bytes": 21114,
+      "sha256": "3d0433674a58fe2a362de95d530981ec0806994e3b8027e3f89b7ec07ed3a9ab"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/tests/test_generate_local_image.py",
+      "bytes": 18551,
+      "sha256": "1c2e986efe37d0bd33d8851dd12ffea2aeb176edebf746d8d3ab25eef4522129"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/tests/test_probe_local_runtime.py",
+      "bytes": 7812,
+      "sha256": "07f19076be2bd85b016be5e69b6e2aea73e8e88eaa818e1d233aaa01e9b2f985"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/tests/test_remove_local_background.py",
+      "bytes": 12073,
+      "sha256": "3e366e8ef7da15c24b0729dc50d79f5016c304aab6dfcf45da87af0ef174bdc1"
+    },
+    {
+      "path": "skill/ai-desktop-assistant/tests/test_run_local_chat.py",
+      "bytes": 21516,
+      "sha256": "7640358a23b40bae6dac2db528ef95d21f0aa96f6471c55ed032a24f94c03e18"
+    },
+    {
+      "path": "starpet/__init__.py",
+      "bytes": 49,
+      "sha256": "105da734e3d0cbf68204a7073b4fdea080e33bff4a36fc78137a7580b4aeedce"
+    },
+    {
+      "path": "starpet/behavior.py",
+      "bytes": 18620,
+      "sha256": "d01c459013281322442a7a0445beb19f7b834ec7089375e93ae2ec8549da24ca"
+    },
+    {
+      "path": "starpet/characters.py",
+      "bytes": 2204,
+      "sha256": "6cc00da153e5c215177ae92f474d6683e29499a25f3f635c17f2631db3ab0822"
+    },
+    {
+      "path": "starpet/chat_gui.py",
+      "bytes": 61682,
+      "sha256": "a20a310293441de681649bcd5cd269b11895151f54c6ddbdbc96fda0421b8387"
+    },
+    {
+      "path": "starpet/codebuddy_backend.py",
+      "bytes": 22306,
+      "sha256": "f8bc3a76cdb1bc07fb4b8c90941cac5f20e7cb176141d0b4e401f088cc9cce6d"
+    },
+    {
+      "path": "starpet/codex.py",
+      "bytes": 8826,
+      "sha256": "c3404f475d1a9fd8ad89f824e18b337a4504cb8b04de388e476fdd2776468450"
+    },
+    {
+      "path": "starpet/companion.py",
+      "bytes": 24715,
+      "sha256": "9b9f648d5ba9e0e1e86a805a2a56198ebd8d5bc22ba98140484351bdd3e13ee0"
+    },
+    {
+      "path": "starpet/core.py",
+      "bytes": 9743,
+      "sha256": "4bb35202671f50eddf73faaaddaafb77b6e317c30db301f1ab04da539db13de9"
+    },
+    {
+      "path": "starpet/creation.py",
+      "bytes": 32015,
+      "sha256": "602f7360f1bc8d7252deb170df36cc3f70cc790d0f0436a8fbeaee42749d9d98"
+    },
+    {
+      "path": "starpet/creation_controller.py",
+      "bytes": 6347,
+      "sha256": "594c5e9aa2d120de84329a24ce349d1088d57ad6ac0e5d6f0caf6fda04b8dcba"
+    },
+    {
+      "path": "starpet/creation_gui.py",
+      "bytes": 29117,
+      "sha256": "01eba3e9071f3f460c823c1ff147d216c6c3b8d9104d7686257e1eaa426acac5"
+    },
+    {
+      "path": "starpet/creation_tools.py",
+      "bytes": 16776,
+      "sha256": "fb9214b8747a0d6e35ec1a24b6121c25f062faa254487a2de8fdcb0cab8332cd"
+    },
+    {
+      "path": "starpet/desktop_world.py",
+      "bytes": 13764,
+      "sha256": "7362a97b961a861e1787b6df6c1707de2f4d6058a95883a7ca6b26430419eca1"
+    },
+    {
+      "path": "starpet/focus.py",
+      "bytes": 14642,
+      "sha256": "5743a108b25541ba40e3dcf03d824064a780fb2fbbad5105781db359329db8ce"
+    },
+    {
+      "path": "starpet/focus_gui.py",
+      "bytes": 10140,
+      "sha256": "c166eeec3766a01fbe58fd0959784d863bf05c52907b75d972849a85ce7467ae"
+    },
+    {
+      "path": "starpet/growth.py",
+      "bytes": 2903,
+      "sha256": "a18aca40da56b518601d4cb2372212a78b716bbfd19d377a4ec0a17945cc9fc6"
+    },
+    {
+      "path": "starpet/growth_gui.py",
+      "bytes": 3228,
+      "sha256": "44632b06c03c2dc8870e3d7319dc3a8e5fcab2ba6f04098f22a57e8b9ec33f09"
+    },
+    {
+      "path": "starpet/gui.py",
+      "bytes": 74318,
+      "sha256": "2cab6891e615286e373c7359d1ab59d8b6c8ba1e84e232eb825d48aef2b9da5e"
+    },
+    {
+      "path": "starpet/hooks.py",
+      "bytes": 5285,
+      "sha256": "8f9fb78fb746bcd74984bebb7be0338222aad4a0921fc293f0e34a0139d65d46"
+    },
+    {
+      "path": "starpet/image_input.py",
+      "bytes": 2648,
+      "sha256": "2f8538e8eb1de7506a78095fccd78a367a4a484df51707f3c07fe03bbc1de451"
+    },
+    {
+      "path": "starpet/local_runtime.py",
+      "bytes": 12848,
+      "sha256": "6a7ef1ae9748d690d9ad8ab9a8ae9502288eae5d614cbcb7bdee70fb80ff8caf"
+    },
+    {
+      "path": "starpet/memory_gui.py",
+      "bytes": 12630,
+      "sha256": "cedfd717b1f1b5e1484f3c0119e859fb8c77434e3dbd881fefe982dab02174ef"
+    },
+    {
+      "path": "starpet/memory_suggestions.py",
+      "bytes": 11301,
+      "sha256": "b4210360cbd065476b66c1cface8efdbd73ad91aa42178c1b0d59d0b7d31daeb"
+    },
+    {
+      "path": "starpet/pair_gui.py",
+      "bytes": 3834,
+      "sha256": "c56346e0f5275ddabd2737cad9d0f2f71a77b13b37bfe633d57e6dd066eda212"
+    },
+    {
+      "path": "starpet/proactive.py",
+      "bytes": 8732,
+      "sha256": "244be7bcec068db1522ca898dd91337c8b14845229b858dc9ea317fbe6560d7e"
+    },
+    {
+      "path": "starpet/rolepacks.py",
+      "bytes": 25818,
+      "sha256": "b0dad4458ea6e2e0013e8f3b347920d58b2c8295e13f2dc9c9d7dc158cbb915b"
+    },
+    {
+      "path": "starpet/roles_gui.py",
+      "bytes": 13891,
+      "sha256": "ccb3825abc39d2a05806197c89be5cc7aa19cd5554dbc3cbd2e55057a57a4276"
+    },
+    {
+      "path": "starpet/settings_gui.py",
+      "bytes": 6401,
+      "sha256": "b42a669bbae461ff98aeb7ec20be55a968a41434673f46dbe5a25a590919cfaa"
+    },
+    {
+      "path": "starpet/storage.py",
+      "bytes": 2961,
+      "sha256": "c6fadad551ee43156d02fbd80f7b48dc697a7bd27761e2b6a131205f6347d238"
+    },
+    {
+      "path": "starpet/transport.py",
+      "bytes": 6312,
+      "sha256": "84f339c210dff414948a3f3d7345ae924a2bf29fb119f7a6b348756ccc4e8de5"
+    },
+    {
+      "path": "starpet/voice.py",
+      "bytes": 9473,
+      "sha256": "f9ab41adfcad23c6d6d9f2d6d0ff4a1d4561c2690937e553a698fdb05c12d144"
+    },
+    {
+      "path": "starpet/workbuddy_readonly.py",
+      "bytes": 3121,
+      "sha256": "3ef12e2bcfdcbb84fe6cacd9d93a587b3dd140baf2946011fca4e0887d50af6d"
+    },
+    {
+      "path": "starpet/workbuddy_status.py",
+      "bytes": 3345,
+      "sha256": "70641d6faaa609ea5068fbc583bc9d9e728dadaea6cb59b9535727643f42f2d0"
+    },
+    {
+      "path": "tests/test_animation_forms.py",
+      "bytes": 18104,
+      "sha256": "909e014f93ee537a4d5dadc4e36c496d28baa2a4a11d9ec7534baac99cc8b615"
+    },
+    {
+      "path": "tests/test_appearance_ipc.py",
+      "bytes": 2817,
+      "sha256": "400131352d7230576303ff8f377b2cbcc50d8a009814292e7b168082767e882d"
+    },
+    {
+      "path": "tests/test_behavior.py",
+      "bytes": 27592,
+      "sha256": "f4a6fe371efbc354fb90ddcf66417b7020dc4f5f6fa1f6f4017a5948e26cc19f"
+    },
+    {
+      "path": "tests/test_chat_context.py",
+      "bytes": 14167,
+      "sha256": "0ebedfa101a65e957f1d3071e4a42307411c06f1e1c39df3dc561c4d0448ce82"
+    },
+    {
+      "path": "tests/test_codebuddy_backend.py",
+      "bytes": 19932,
+      "sha256": "f3debf4392e60a0c02b37459c2dba1e5d9359c68dd53541eae0f7f425a86f412"
+    },
+    {
+      "path": "tests/test_codebuddy_discovery.py",
+      "bytes": 8568,
+      "sha256": "4763694ff26798b40eee58e5ce6c6c65ed2ba58152fef3a9c318dd6e2295956d"
+    },
+    {
+      "path": "tests/test_codebuddy_plugin_boundary.py",
+      "bytes": 11155,
+      "sha256": "bd1fa06d7a6c3735daa638253e9923792ff6356d6ebfb2801340328235761252"
+    },
+    {
+      "path": "tests/test_common_image_inputs.py",
+      "bytes": 3711,
+      "sha256": "5ae5a0226085f78e636b273cee9d141b73d916194dd3b1bb0f5397304d00ebca"
+    },
+    {
+      "path": "tests/test_compact_world.py",
+      "bytes": 2645,
+      "sha256": "28dc0084416023726aa7f19d7564d8f857cdaddf238d1853c6888c846bb848f6"
+    },
+    {
+      "path": "tests/test_companion.py",
+      "bytes": 11038,
+      "sha256": "3ff7576b8615af4b7e0b106b764b156f745231d01fbec3300f5352fe1e1682dc"
+    },
+    {
+      "path": "tests/test_companion_context_ui.py",
+      "bytes": 19007,
+      "sha256": "3a6fdb5567cbb7f1973e539f9b39fea7cadb94e075e775096f9823b90a24ee00"
+    },
+    {
+      "path": "tests/test_connection_drafts_ui.py",
+      "bytes": 18635,
+      "sha256": "038aba70019f96b36b3099449fb696d5ac3f489e91d2bd483d9673a4ca11f1ee"
+    },
+    {
+      "path": "tests/test_context_menu_routes.py",
+      "bytes": 1710,
+      "sha256": "fee8a68a0a4ca899a5f5ce83bbeb41f9506461a59a120a2546da3353e84dc57f"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "bytes": 16917,
+      "sha256": "cf174353edacfb199982fa7a65029e3fda8087e7a604cd852d7c1f2156e0cfde"
+    },
+    {
+      "path": "tests/test_creation.py",
+      "bytes": 26640,
+      "sha256": "5ea806b3fac1401fec594ad7fc8bebc79d7756bfcf0ab7c88a37c9694dcb0a37"
+    },
+    {
+      "path": "tests/test_creation_dialog_ui.py",
+      "bytes": 22923,
+      "sha256": "5eab7c7e672fa2ab938387831cfd96faa0e92661b3c52687247fcd22c1afe295"
+    },
+    {
+      "path": "tests/test_creation_integration_ui.py",
+      "bytes": 7527,
+      "sha256": "0d9ac32d2b5fadc7cb039631b98ea8f73cf632adb9552f6a64ff84916d5163ee"
+    },
+    {
+      "path": "tests/test_creation_tools.py",
+      "bytes": 26094,
+      "sha256": "2912bb6d74df9fe52528ba9c7c1e3247a66e32e8db3648b600a4dadc24fa0cef"
+    },
+    {
+      "path": "tests/test_desktop_world.py",
+      "bytes": 5241,
+      "sha256": "2e9c49f3d6f54ef34cd4638e00f5455dcd9b61364196ca7d618c676a258583c0"
+    },
+    {
+      "path": "tests/test_focus.py",
+      "bytes": 17236,
+      "sha256": "85a08a26fc193bed05046570c67de5710dcb7333252a20bf957692a19ea02e82"
+    },
+    {
+      "path": "tests/test_focus_ui.py",
+      "bytes": 21794,
+      "sha256": "b72cd2795094085163a31208224965a93c3ceb0fb9e7450b241093184c42fbb8"
+    },
+    {
+      "path": "tests/test_growth.py",
+      "bytes": 2410,
+      "sha256": "468d7983e0e1500763a7f30e773cbab6937bb02e8483bd666d55ad0afd9cf2b9"
+    },
+    {
+      "path": "tests/test_growth_ui.py",
+      "bytes": 1485,
+      "sha256": "64efe3765aec1f877cc0cca58a34ea965877425ed5d7c3cdfe4808fc6b1ac9c4"
+    },
+    {
+      "path": "tests/test_human_size.py",
+      "bytes": 9438,
+      "sha256": "a4b60c0b5bed1686f5956bdff340fb07f6a419b5baa2209c486474485ccdb2d1"
+    },
+    {
+      "path": "tests/test_local_handoff.py",
+      "bytes": 15417,
+      "sha256": "a5cf1425805299e30388a4e5e8e6e6d323e9e8ea200bd5354a41ac058fc6f5f4"
+    },
+    {
+      "path": "tests/test_local_models.py",
+      "bytes": 3602,
+      "sha256": "77afb727ad18e9229965456a211a15ab680558dce27b06e9dfa0b297ac0e8de9"
+    },
+    {
+      "path": "tests/test_local_runtime.py",
+      "bytes": 15097,
+      "sha256": "f22a1b5c8ded197266b693c8f188a4bd245b6f242f1ec2c9312fe5ec6c438d9f"
+    },
+    {
+      "path": "tests/test_local_runtime_ui.py",
+      "bytes": 19091,
+      "sha256": "a8dce7f0a2029634b8ddbb43b6a7d7f8aebf54702704d194835a8d01be757be3"
+    },
+    {
+      "path": "tests/test_memory_integration_ui.py",
+      "bytes": 11244,
+      "sha256": "92d463ac2c99673f26c7f267b026b2a240d9af7498addd524d9bb66d9ff08a12"
+    },
+    {
+      "path": "tests/test_memory_review_ui.py",
+      "bytes": 12086,
+      "sha256": "99a2a94d8b925c1acd18a21c12b3cae1b51ca1bf025903da33383f8774fab2a3"
+    },
+    {
+      "path": "tests/test_memory_suggestions.py",
+      "bytes": 15714,
+      "sha256": "39babb6c49a868de67ac316f5418ec0f9ce37cbe58e606afa2d3459c266093f8"
+    },
+    {
+      "path": "tests/test_memory_transactions.py",
+      "bytes": 15692,
+      "sha256": "c4d1cb21793f2098760582fe80a9562edcf07698726d71b42992987b8b18b93e"
+    },
+    {
+      "path": "tests/test_model_scope.py",
+      "bytes": 9582,
+      "sha256": "7243c1ec9bd23442c8b2ca9bca0a1c5940f19561cce8fa76b0370a815db39cb9"
+    },
+    {
+      "path": "tests/test_model_scope_ui.py",
+      "bytes": 5420,
+      "sha256": "d09a4dc833a56c8489694ea2ee1d0d74913ded40b4d4841076a8387c31a8c7ae"
+    },
+    {
+      "path": "tests/test_model_selection_ui.py",
+      "bytes": 1369,
+      "sha256": "ab6faecaa1cc8e410184c2fe8bd10a1f66ad1313f17f20d42882a1ca1d855120"
+    },
+    {
+      "path": "tests/test_motion_handoff.py",
+      "bytes": 17109,
+      "sha256": "31bf9fc0033ecd5c77270a77b0eb416cb6a9d2ae243445f925dae52773bab524"
+    },
+    {
+      "path": "tests/test_paired_roles.py",
+      "bytes": 5975,
+      "sha256": "ac6bdbd99e8c7ec1d1249190662dcb854e3a00db001a51fa55f2feffd531498c"
+    },
+    {
+      "path": "tests/test_preferences_transactions.py",
+      "bytes": 4792,
+      "sha256": "d6c6e743675528ff45f3bf17735241ffcffebe0befb9ed59a9d8f15a4eef7735"
+    },
+    {
+      "path": "tests/test_proactive.py",
+      "bytes": 18134,
+      "sha256": "c3f258be6e8125f0d2523ef572209c472a00dd7dc4f20714cf6483e96a6be28c"
+    },
+    {
+      "path": "tests/test_role_appearance.py",
+      "bytes": 7879,
+      "sha256": "d1ef503ac704261b7aa342b99d0d67ac80b483156f88ea8a692d2a8af096df5c"
+    },
+    {
+      "path": "tests/test_role_export_profile.py",
+      "bytes": 7006,
+      "sha256": "e72d5880d6ce18fd6cb48b19e9eb8330d9733178731cc3c98973e0e51fded3a1"
+    },
+    {
+      "path": "tests/test_role_memory.py",
+      "bytes": 10633,
+      "sha256": "8578aa1973e18c990fd1d63d6da0f2bc856c9084857b83b259b78fc0e9e43d68"
+    },
+    {
+      "path": "tests/test_role_preview.py",
+      "bytes": 6382,
+      "sha256": "64d687aeadfeb0f8ad92c4d56ff7989ac31f6e8b51a1d9567ce1ce96a71a32e9"
+    },
+    {
+      "path": "tests/test_rolepacks.py",
+      "bytes": 13695,
+      "sha256": "6bfe28882ef8006e150f6a9106e4d183873371685be55cee9fcd30e1de83e80c"
+    },
+    {
+      "path": "tests/test_settings_integration_ui.py",
+      "bytes": 5690,
+      "sha256": "be433e8914fcd8bc6635fcd3ad2bddb2b294d5ee2015e24ead897a7dedefa990"
+    },
+    {
+      "path": "tests/test_settings_page_ui.py",
+      "bytes": 9230,
+      "sha256": "35cef37b7a39fbd0c4beaaf21c297dbd8a57b4aa9054537c52e5896051dd1bce"
+    },
+    {
+      "path": "tests/test_voice.py",
+      "bytes": 3370,
+      "sha256": "0054afd3e0619f0c6811c1ad6ae34a90fd9bae13241ee3aa1d3885ded5f8db94"
+    },
+    {
+      "path": "tests/test_voice_feedback_ui.py",
+      "bytes": 6372,
+      "sha256": "900b968d677ee0a18e6ecd65d0d56ae0e7274305ef1d3e40d66344f2e84a0513"
+    },
+    {
+      "path": "tests/test_voice_worker.py",
+      "bytes": 8482,
+      "sha256": "50153fdd5193a687c76f848801d0b1a609f7a00a4d5c9d994e00dbac2b632602"
+    },
+    {
+      "path": "tests/test_window_position.py",
+      "bytes": 905,
+      "sha256": "af2a9119aa89efccb4f33dc7203f8efa3bd5353b7d0f19d7ddfe795ae4b01b53"
+    },
+    {
+      "path": "tests/test_workbuddy_install_guard.py",
+      "bytes": 727,
+      "sha256": "a6e8550d2d919e3629ccccdda932dad4f464e6a99244d5b6ac1c638164ace5c9"
+    },
+    {
+      "path": "tests/test_workbuddy_readonly.py",
+      "bytes": 2977,
+      "sha256": "5ef45fc936de5259d2f44f21cd5b305df0e566417d87fd93b7ffdd92fd6cde05"
+    },
+    {
+      "path": "tests/test_workbuddy_status.py",
+      "bytes": 3193,
+      "sha256": "0725d451c95e27a6089cc0929ce16ae7eb0bb1ef5aa388a1be80f599605a306a"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 5345,
+      "sha256": "b832531b5ad020225a3a5d6f8fcad192144d4d185f33703c588f389a879dca77"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 288,
+      "sha256": "3fd3d98700b0da41fef9c6360239cc90c464495070b65d31ea1c4178603eef69"
+    }
+  ],
+  "total_bytes": 141564529,
+  "file_count": 184,
+  "git_history_included": false,
+  "production_data_included": false,
+  "three_dimensional_assets_included": false,
+  "secret_patterns_checked": [
+    "aws_key",
+    "github_token",
+    "jwt",
+    "openai_key",
+    "private_home",
+    "private_key"
+  ],
+  "metadata_redactions": [
+    {
+      "path": "assets/characters/robot/image.png",
+      "field": "PNG tEXt/File",
+      "operation": "keep authoring filename only; image pixels unchanged"
+    },
+    {
+      "path": "assets/characters/tabby/image.png",
+      "field": "PNG tEXt/File",
+      "operation": "keep authoring filename only; image pixels unchanged"
+    }
+  ],
+  "upload_performed": false
+}

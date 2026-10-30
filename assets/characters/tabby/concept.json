@@ -1,0 +1,18 @@
+{
+  "id": "tabby",
+  "name": "团团小猫",
+  "image": "atlas.png",
+  "columns": 3,
+  "rows": 2,
+  "states": {
+    "idle": 0,
+    "thinking": 1,
+    "working": 2,
+    "waiting": 3,
+    "completed": 4,
+    "error": 5
+  },
+  "source": "built-in imagegen, original cartoon kitten requested by user",
+  "atlas_sha256": "94347e69187b141df652c8c7caaf11c7ce73ce3f97f4bf4787bf62540364df38",
+  "generation_prompt": "Original cream-and-ginger tabby kitten with teal neckerchief; consistent six-state 3x2 atlas; idle, thinking, working at laptop, raising paw, cheering, concerned; transparent background; no text."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 桌面助手工坊"
+  short_description: "从你的角色图片制作桌面助手，接入本机模型，完成后台验证与打包交付"
+  default_prompt: "使用 $ai-desktop-assistant，把我提供的角色图做成能聊天、有记忆的桌面助手，优先接入本机已有模型并完成后台验证。"

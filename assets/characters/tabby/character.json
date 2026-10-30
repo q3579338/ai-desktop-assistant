@@ -1,0 +1,61 @@
+{
+  "id": "tabby",
+  "name": "团团小猫",
+  "image": "image.png",
+  "columns": 1,
+  "rows": 1,
+  "states": {
+    "idle": 0,
+    "thinking": 0,
+    "working": 0,
+    "waiting": 0,
+    "completed": 0,
+    "error": 0
+  },
+  "source": "Original Blender geometry, smooth skin rig and motion; rendered locally, MIT",
+  "generation_prompt": "Original cream-and-ginger tabby kitten TuanTuan with teal neckerchief, cream chest, striped fur, and animated paws, ears and tail. Original imagegen atlas and concept metadata are preserved. Desktop uses locally rendered transparent WebP clips, not real-time 3D.",
+  "clips": {
+    "idle": {
+      "file": "clips/idle.webp",
+      "loop": true
+    },
+    "thinking": {
+      "file": "clips/thinking.webp",
+      "loop": true
+    },
+    "working": {
+      "file": "clips/working.webp",
+      "loop": true
+    },
+    "waiting": {
+      "file": "clips/waiting.webp",
+      "loop": true
+    },
+    "completed": {
+      "file": "clips/completed.webp",
+      "loop": false
+    },
+    "error": {
+      "file": "clips/error.webp",
+      "loop": true
+    },
+    "head_pat": {
+      "file": "clips/head_pat.webp",
+      "loop": false
+    },
+    "drag_start": {
+      "file": "clips/drag_start.webp",
+      "loop": true
+    },
+    "drag_end": {
+      "file": "clips/drag_end.webp",
+      "loop": false
+    },
+    "poke": {
+      "file": "clips/poke.webp",
+      "loop": false
+    }
+  },
+  "model_sha256": "5a6d5569a3281b8ab7e0ba447ffc28d1cb9f993d0bf8c2702e4f81fcb1908cee",
+  "image_sha256": "6210df52acad64136bb1d0c14f1c310ea2e4380562e66e1317307f29f215c21a"
+}
