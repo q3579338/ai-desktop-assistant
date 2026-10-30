@@ -304,8 +304,8 @@
     },
     {
       "path": "main.py",
-      "bytes": 41386,
-      "sha256": "253cb7223ca9916566e98da8ec738b57f40ff3e09e1b726cc46cc3f1a709c4d4"
+      "bytes": 41401,
+      "sha256": "08538f1b1fb263819bf6d1574b4a39ceaa01a7ab20f35c85686b3e168bce9cd4"
     },
     {
       "path": "README.md",
@@ -314,13 +314,13 @@
     },
     {
       "path": "requirements-dev.txt",
-      "bytes": 48,
-      "sha256": "5b4e1018e12e053a3507be7d4c0f44f79a50e7af725ab4c22a040fdaab214f55"
+      "bytes": 33,
+      "sha256": "cacebcbbdc864be465a65f97f2cdfdfcd7d0dea15936c248df3c41fae8a24814"
     },
     {
       "path": "requirements.txt",
-      "bytes": 66,
-      "sha256": "4d50aad542bf1a6848b1ee3fd2c48236820bda91fe079f4a19323f63b643d6e7"
+      "bytes": 81,
+      "sha256": "2b7836d3352f5619123dbf8d1cc9ba535a8e397e22801460b444311a9b0f64a9"
     },
     {
       "path": "scripts/build.py",
@@ -454,8 +454,8 @@
     },
     {
       "path": "skill/ai-desktop-assistant/tests/test_common_format_cli.py",
-      "bytes": 5441,
-      "sha256": "953248df0b49e3bae3b657404e058b7dbb4332ea13e71b98ee6aa576141b924b"
+      "bytes": 7703,
+      "sha256": "29a06d41432c43814415760bb867c053b84c39ca7406861397629e56a05f55ac"
     },
     {
       "path": "skill/ai-desktop-assistant/tests/test_create_assistant.py",
@@ -579,8 +579,8 @@
     },
     {
       "path": "starpet/image_input.py",
-      "bytes": 2648,
-      "sha256": "2f8538e8eb1de7506a78095fccd78a367a4a484df51707f3c07fe03bbc1de451"
+      "bytes": 4108,
+      "sha256": "30a39190abed240923b5c3233e70691825e1b021a9533176748734e13dc49cb4"
     },
     {
       "path": "starpet/local_runtime.py",
@@ -684,8 +684,8 @@
     },
     {
       "path": "tests/test_common_image_inputs.py",
-      "bytes": 3711,
-      "sha256": "5ae5a0226085f78e636b273cee9d141b73d916194dd3b1bb0f5397304d00ebca"
+      "bytes": 5687,
+      "sha256": "b72a7e71cb14a0290ed904e2406fa5150a928e8a2c147977b68d2ac482980656"
     },
     {
       "path": "tests/test_compact_world.py",
@@ -914,8 +914,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 5345,
-      "sha256": "b832531b5ad020225a3a5d6f8fcad192144d4d185f33703c588f389a879dca77"
+      "bytes": 5299,
+      "sha256": "2fd6e59001d50a619037b739185990ce03462ed43ee24cc1da0a7651c420d143"
     },
     {
       "path": ".gitignore",
@@ -923,7 +923,7 @@
       "sha256": "3fd3d98700b0da41fef9c6360239cc90c464495070b65d31ea1c4178603eef69"
     }
   ],
-  "total_bytes": 141564529,
+  "total_bytes": 141570196,
   "file_count": 184,
   "git_history_included": false,
   "production_data_included": false,

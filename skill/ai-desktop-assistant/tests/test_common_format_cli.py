@@ -41,6 +41,33 @@ class CommonFormatCLI(unittest.TestCase):
             self.assertEqual(value['normalization']['sha256'],value['rolepack']['image_sha256'])
             self.assertIn('source.jpg',(out/'README.md').read_text(encoding='utf-8'))
 
+    def test_tiff_creator_preserves_original_alpha_orientation_and_first_frame(self):
+        with fixture_directory() as folder:
+            for extension in ('tif','tiff'):
+                with self.subTest(extension=extension):
+                    source=folder/('pages.'+extension);exif=Image.Exif();exif[274]=6
+                    Image.new('RGBA',(40,80),(200,80,10,70)).save(source,format='TIFF',exif=exif,
+                        save_all=True,append_images=[Image.new('RGBA',(40,80),(10,80,200,120))])
+                    original=source.read_bytes()
+                    result=self.run_tool('create_assistant.py','--app-source',PROJECT,'--image',source,'--name','多页图片测试','--output-dir',folder/extension)
+                    self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+                    value=json.loads(result.stdout);out=Path(value['output_dir'])
+                    self.assertTrue(value['created']);self.assertTrue(value['normalization']['first_frame_only'])
+                    self.assertEqual(value['normalization']['format'],'tiff')
+                    self.assertEqual((out/('source.'+extension)).read_bytes(),original);self.assertEqual(source.read_bytes(),original)
+                    with Image.open(out/'source.png') as image:
+                        self.assertEqual(image.size,(80,40));self.assertEqual(image.convert('RGBA').getpixel((4,4)),(200,80,10,70))
+                    self.assertEqual(value['normalization']['sha256'],value['rolepack']['image_sha256'])
+
+    def test_tiff_signature_with_jpeg_suffix_uses_same_safe_builder_path(self):
+        with fixture_directory() as folder:
+            source=folder/'renamed.jpg';Image.new('RGB',(40,80),'orange').save(source,format='TIFF')
+            original=source.read_bytes();output=folder/'renamed.zip'
+            result=self.run_tool('build_rolepack.py','--app-source',PROJECT,'--image',source,'--name','签名测试','--output',output)
+            self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+            value=json.loads(result.stdout);self.assertTrue(value['import_verified'])
+            self.assertEqual(value['normalization']['format'],'tiff');self.assertEqual(source.read_bytes(),original)
+
     def test_creator_animation_is_first_frame_and_original_survives(self):
         with fixture_directory() as folder:
             source=folder/'animated.gif';Image.new('RGB',(32,32),'red').save(source,save_all=True,append_images=[Image.new('RGB',(32,32),'blue')],duration=80,loop=0)

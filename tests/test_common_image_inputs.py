@@ -5,6 +5,8 @@ import unittest
 from pathlib import Path
 import uuid
 from contextlib import contextmanager
+from io import BytesIO
+from unittest.mock import patch
 
 @contextmanager
 def workspace():
@@ -41,6 +43,30 @@ class CommonImageInputs(unittest.TestCase):
             Image.new('RGBA',(32,32),(200,80,10,70)).save(path,lossless=True)
             image,info=decode_image(path.read_bytes(),'.webp')
             self.assertEqual(image.pixelColor(1,1).alpha(),70)
+    def test_tiff_decoder_never_enters_qt_plugin_and_owns_first_frame_pixels(self):
+        raw=BytesIO();Image.new('RGBA',(32,48),(200,80,10,70)).save(raw,format='TIFF',
+            save_all=True,append_images=[Image.new('RGBA',(32,48),(10,80,200,120))])
+        # Both its extension and its signature must bypass Qt's TIFF plugin.
+        for suffix in ('.tif','.tiff','.jpg'):
+            with self.subTest(suffix=suffix),patch('starpet.image_input.QImageReader',side_effect=AssertionError('Qt TIFF plugin must not run')) as reader:
+                image,info=decode_image(raw.getvalue(),suffix)
+                reader.assert_not_called();self.assertEqual(info,{'format':'tiff','first_frame_only':True})
+                self.assertEqual((image.width(),image.height()),(32,48))
+                self.assertEqual(image.pixelColor(4,4).getRgb(),(200,80,10,70))
+        raw.close()
+        # Pillow and its stream have gone; the returned image still owns data.
+        self.assertEqual(image.pixelColor(4,4).getRgb(),(200,80,10,70))
+    def test_tiff_orientation_is_applied(self):
+        raw=BytesIO();exif=Image.Exif();exif[274]=6
+        Image.new('RGBA',(40,80),(200,80,10,70)).save(raw,format='TIFF',exif=exif)
+        image,info=decode_image(raw.getvalue(),'.tiff')
+        self.assertEqual((image.width(),image.height()),(80,40));self.assertEqual(image.pixelColor(1,1).alpha(),70)
+        self.assertFalse(info['first_frame_only'])
+    def test_tiff_limits_and_corruption_are_rejected_before_qt(self):
+        large=BytesIO();Image.new('RGB',(4097,1),'red').save(large,format='TIFF')
+        for data in (b'not a tiff',b'II*\x00\x08\x00\x00\x00',large.getvalue()):
+            with self.subTest(prefix=data[:8]),patch('starpet.image_input.QImageReader',side_effect=AssertionError('Qt TIFF plugin must not run')):
+                with self.assertRaises(ValueError):decode_image(data,'.tif')
     def test_jpeg_orientation_applied(self):
         with workspace() as temp:
             path=Path(temp)/'phone.jpg';exif=Image.Exif();exif[274]=6

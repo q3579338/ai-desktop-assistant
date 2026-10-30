@@ -6,10 +6,37 @@ from PySide6.QtGui import QImageReader
 EXTENSIONS={'.png','.jpg','.jpeg','.webp','.bmp','.tif','.tiff','.gif'}
 FILTER='常见图片 (*.png *.jpg *.jpeg *.webp *.bmp *.tif *.tiff *.gif)'
 FORMATS={b'png',b'jpeg',b'jpg',b'webp',b'bmp',b'tiff',b'tif',b'gif'}
+TIFF_HEADERS=(b'II*\x00',b'MM\x00*',b'II+\x00',b'MM\x00+')
+
+
+def _decode_tiff(data):
+    # The Qt TIFF plugin can terminate a fresh Windows CLI process while
+    # probing an in-memory stream. Decode TIFF before creating any Qt reader.
+    # The copied QImage owns its pixels after Pillow and the byte buffer close.
+    from io import BytesIO
+    from PIL import Image,ImageOps
+    from PySide6.QtGui import QImage
+    try:
+        with Image.open(BytesIO(data),formats=['TIFF']) as source:
+            if max(source.size)>4096 or source.width*source.height>16*1024*1024:
+                raise ValueError('TIFF超过允许尺寸。')
+            multiple=getattr(source,'n_frames',1)>1
+            source.seek(0)
+            rgba=ImageOps.exif_transpose(source).convert('RGBA')
+            if max(rgba.size)>4096 or rgba.width*rgba.height>16*1024*1024:
+                raise ValueError('TIFF超过允许尺寸。')
+            pixels=rgba.tobytes()
+            image=QImage(pixels,rgba.width,rgba.height,rgba.width*4,QImage.Format.Format_RGBA8888).copy()
+            if image.isNull():raise ValueError('TIFF图片无法转换。')
+            return image,{'format':'tiff','first_frame_only':multiple}
+    except (OSError,ValueError,SyntaxError,Image.DecompressionBombError):
+        raise ValueError('TIFF图片损坏或超过允许尺寸。') from None
 
 def decode_image(data,suffix):
     if suffix.lower() not in EXTENSIONS or not 0<len(data)<=32*1024*1024:
         raise ValueError('请选择 PNG、JPG、WebP、BMP、TIFF 或 GIF，文件最多32MB。')
+    if suffix.lower() in ('.tif','.tiff') or data[:4] in TIFF_HEADERS:
+        return _decode_tiff(data)
     buffer=QBuffer();buffer.setData(QByteArray(data));buffer.open(QIODevice.OpenModeFlag.ReadOnly)
     reader=QImageReader(buffer);reader.setAutoTransform(True)
     size=reader.size()

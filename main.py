@@ -421,7 +421,7 @@ def render_evidence(args, state, profile):
     from starpet.creation_tools import CreationJob
     formats=[]
     format_inputs=folder/'common-image-inputs';format_inputs.mkdir()
-    for extension,encoding in (('jpg','JPEG'),('webp','WEBP'),('bmp','BMP'),('tiff','TIFF'),('gif','GIF')):
+    for extension,encoding in (('jpg','JPEG'),('webp','WEBP'),('bmp','BMP'),('tif','TIFF'),('tiff','TIFF'),('gif','GIF')):
         source=format_inputs/('fixture.'+extension)
         sample=Image.new('RGBA' if extension=='webp' else 'RGB',(64,80),(210,150,60,70) if extension=='webp' else (210,150,60))
         sample.save(source,format=encoding,**({'lossless':True} if extension=='webp' else {}))
